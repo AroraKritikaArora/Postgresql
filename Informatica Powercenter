@@ -1,0 +1,9 @@
+Desinger has 5 parts --Source Analyzer,Target Definition,Transformation Developer,Mapplet Designer,Mapping Designer.
+Mapplet Designer-It is used to Use reusable transformations to create mapplet .
+There are two types of flat files-Fixed width File and delimited File.
+Preview Data in target table---Right Click on Target Table > select Preview Data > Browse the name of file >Open >Set Data 
+Workflow Manager has three parts---Task Developer,Worklet Designer and Workflow Designer.
+Worklet-It is a collection of re-usable tasks.
+How to generate worflow from Mapping Designer? 
+Go to Mappings tab in designer > Generate Workflow> Wf with a non reusable Session > Next >Specify a prefix > Next >configure Connection > Ok >Next>Finish .
+Session properties -
