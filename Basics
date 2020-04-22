@@ -1,0 +1,12 @@
+Select Query -Query that are used to retreive any information from database.
+Filter Condition-Adding a filter using where clause ---select col1,col2 from tblname where col1='value1';
+Logical Conditions in Postgresql-Using And/OR in postgresql---select col1,col2 from tblname where col1='value1' And/Or col2='Value2'
+Using Wildcards % and _ ----select col1 from tbl1 where col1 like '%value%'
+Comments in SQL ----eg --Comment,/*____*/
+Alter table in Postgresql---alter table tbl name add column col1 datatype;
+Update Postgresql---Update Tblname set column name = Col1+col2+col3;
+WORKING WITH VARCHARS-- we can do select col1, left(col1,4) from tblname;select col1, right(col1,4) from tblname;select col 1, reverse(col 1) from tblname;
+Working with Dates---select Date_part(col1)-Date_part(col2)as Date_alias from tblname;
+Implicit Conversions----select Cast(col1,varchar(4)) from tblname order by col1;select col1::varchar(4)) from tblname order by col1;
+Working with null---select col1 from tblname where colname IS Null;
+
