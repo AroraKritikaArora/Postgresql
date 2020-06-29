@@ -1,9 +1,39 @@
-Desinger has 5 parts --Source Analyzer,Target Definition,Transformation Developer,Mapplet Designer,Mapping Designer.
-Mapplet Designer-It is used to Use reusable transformations to create mapplet .
-There are two types of flat files-Fixed width File and delimited File.
-Preview Data in target table---Right Click on Target Table > select Preview Data > Browse the name of file >Open >Set Data 
-Workflow Manager has three parts---Task Developer,Worklet Designer and Workflow Designer.
-Worklet-It is a collection of re-usable tasks.
-How to generate worflow from Mapping Designer? 
-Go to Mappings tab in designer > Generate Workflow> Wf with a non reusable Session > Next >Specify a prefix > Next >configure Connection > Ok >Next>Finish .
-Session properties -
+INFORMATICA INTERVIEW QUESTIONS: 
+
+Q1:What is ETL and what are ETL Tools?
+Ans1:ETL is a process of Extract, Transform and Load the data into DataWarehousing in the required format for decision-making.
+
+ETL TOOLS:
+IBM Datastage
+Informatica PowerCenter
+Abinitio
+Talend Studio etc.
+
+Q2:. What is Informatica?
+Informatica is an ETL tool provided by ‘Informatica Corporation’ which is used to Extract, Transform and Load all type of databases.
+
+Q3). What is Informatica PowerCenter Tools?
+Informatica PowerCenter had 2 types of Tools:
+
+Server Tools: Administrator Console, Integration Service
+Client Tools: Repository Manager, Designer, Workflow Manager, Workflow Monitor
+
+Q4). What is Repository Manager?
+It is used to organize and secure metadata by creating folders.
+
+Q5). What is Designer?
+The designer is used to create source definitions, target definitions, and transformations to build the mappings.
+Also, it is used to create mapplets which can be reused in different mappings.
+
+Q6). What is Workflow Manager?
+It is used to store workflow metadata and connection object information in the repository. A wf contains sessions and different tasks according to the requirement. 
+Tasks can include session, email notification, assignment task, decision task etc. 
+Each task in a wf needs to be connected via links and also we can provide link task based on the requirements
+
+Q7). What is Workflow Monitor?
+It is used to retrieve wf run status and session logs.
+
+Q9). Define Session?
+It is a set of instructions that describe how and when to move the data from source to target.
+
+Q10
