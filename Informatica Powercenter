@@ -36,4 +36,32 @@ It is used to retrieve wf run status and session logs.
 Q9). Define Session?
 It is a set of instructions that describe how and when to move the data from source to target.
 
-Q10
+Q10). Define Transformation?
+Its nothing but a repository object that generates, modifies or passes data.
+
+Active and Passive Transformation?
+An active transformation can change the number and position of rows that pass through it. For Eg. Aggregator, Rank, Filter etc.
+A passive transformation doesn’t change the number of rows that pass through it. For Eg. Expression, Sequence Generator etc.
+
+Connected and Unconnected Transformation?
+A connected transformation is connected to source definition or target definition or other transformation in a mapping
+An unconnected transformation is not connected to any of the Informatica objects in a mapping.
+
+Q11). What is SQ Transformation?
+An SQ is an active and connected transformation that reads the rows from a relational database or flat file source while running a session.
+
+Q12). What is an Expression Transform?
+The expression is a Passive and connected transformation which is used to calculate values in a single row. Also, it can be used to test conditional statements before writing the output results to target tables or other transformations.
+
+For eg. we might need to adjust employee salaries, concatenate first and last names, or convert strings to numbers or vice versa etc.
+
+Q13). How do we convert a Date field coming as data type string from a flat file?
+IIF( IS_DATE( Column1 ) = 1, TO_DATE( Column1 , ‘YYYY-MM-DD’ ), NULL )
+
+Q14). How to select distinct rows for flat file sources?
+Since in a Flat File the distinct option in the source qualifier will be disabled, hence we can use a Sorter Transformation and check the Distinct option to get the unique rows.
+When we select the distinct option all the columns will the selected as keys, in ascending order by default.
+
+Q15). How can we delete duplicate records using Aggregator?
+By using the Group By checkbox on the ports having duplicate occurring data.
+
