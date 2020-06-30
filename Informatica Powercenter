@@ -65,3 +65,17 @@ When we select the distinct option all the columns will the selected as keys, in
 Q15). How can we delete duplicate records using Aggregator?
 By using the Group By checkbox on the ports having duplicate occurring data.
 
+Q16). What is the difference between Source Qualifier transformations Source filter option and filter transformation?
+SQ Source Filter	Filter Transformation
+Source Qualifier transformation filters rows while reading from the source.	Filter transformation filters rows from within a mapping
+Limits the records extracted from a source	Limits the records sent to a target
+It can only filter rows from relational sources	Filters rows coming from any type of source system
+The filter condition in the Source Qualifier transformation only uses standard SQL	Filter Transformation can define a condition using any statement or transformation function that returns either a TRUE or FALSE
+
+Q17) What is lookup transformation?
+A lookup is a connected and unconnected transformation which is used to perform below tasks:
+
+Get related value
+Perform a calculation
+Update slowly changing dimension tables
+
