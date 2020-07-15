@@ -1,2 +1,0 @@
-# Postgresql
-Notes of PostgreSQL 
